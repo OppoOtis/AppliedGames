@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/SubProjects/PuzzleAssignment/Scenes/PuzzleAsignmentScene.unity
+    guid: dabb6b947b24f744ab8efe580af2bde4
   m_configObjects: {}
