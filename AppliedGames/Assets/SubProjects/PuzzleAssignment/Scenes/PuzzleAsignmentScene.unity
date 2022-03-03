@@ -1738,7 +1738,7 @@ PrefabInstance:
       objectReference: {fileID: 412808788}
     - target: {fileID: 8097943674606060214, guid: 8db703920187f6f45aae75fa0adb21f0, type: 3}
       propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: set_isStatic
+      value: SetActive
       objectReference: {fileID: 0}
     - target: {fileID: 8097943674606060214, guid: 8db703920187f6f45aae75fa0adb21f0, type: 3}
       propertyPath: m_Delegates.Array.data[2].callback.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -2980,7 +2980,7 @@ RectTransform:
   - {fileID: 751976779}
   - {fileID: 123213608}
   m_Father: {fileID: 908500488}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4109,7 +4109,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &761178383
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4273,8 +4273,8 @@ RectTransform:
   - {fileID: 2086534756}
   - {fileID: 95942016}
   - {fileID: 1399293877}
-  - {fileID: 1097386758}
   - {fileID: 412808789}
+  - {fileID: 1097386758}
   - {fileID: 1865835958}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -5049,7 +5049,7 @@ RectTransform:
   - {fileID: 1157895492}
   - {fileID: 1869243408}
   m_Father: {fileID: 908500488}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -6132,7 +6132,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1399293877
 RectTransform:
   m_ObjectHideFlags: 0
