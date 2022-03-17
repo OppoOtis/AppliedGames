@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/SubProjects/PuzzleAssignment/Scenes/PuzzleAsignmentScene.unity
     guid: dabb6b947b24f744ab8efe580af2bde4
   - enabled: 1
-    path: Assets/SubProjects/MainAssignment/Scenes/Puzzel1.unity
+    path: Assets/SubProjects/MainAssignment/Scenes/Puzzel1/Puzzel1 Boris.unity
     guid: c006d216d06a55448ba72ceea1db3c4e
   - enabled: 1
     path: Assets/SubProjects/MainAssignment/Scenes/Puzzel2_BORIS.unity
