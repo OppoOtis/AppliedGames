@@ -324,8 +324,8 @@ Camera:
   m_GameObject: {fileID: 869963945}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 1, g: 0.6, b: 0.6, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -755,6 +755,7 @@ GameObject:
   - component: {fileID: 2104597862}
   - component: {fileID: 2104597864}
   - component: {fileID: 2104597863}
+  - component: {fileID: 2104597865}
   m_Layer: 5
   m_Name: Blender
   m_TagString: Untagged
@@ -778,7 +779,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -340, y: 286}
+  m_AnchoredPosition: {x: -288, y: 298}
   m_SizeDelta: {x: 410.453, y: 410.453}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2104597863
@@ -819,3 +820,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2104597861}
   m_CullTransparentMesh: 1
+--- !u!114 &2104597865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104597861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1907cedcaa9f0e146a9a0fddd9c2a0f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
