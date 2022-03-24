@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/SubProjects/MainAssignment/Scenes/Puzzel1/Puzzel1 Boris.unity
     guid: c006d216d06a55448ba72ceea1db3c4e
+<<<<<<< Updated upstream
+=======
+  - enabled: 0
+    path: Assets/SubProjects/MainAssignment/Scenes/Puzzel3Greet.unity
+    guid: 76539c6029e742c4abd54f5318c18dc0
+>>>>>>> Stashed changes
   - enabled: 1
     path: Assets/SubProjects/MainAssignment/Scenes/Puzzel2_BORIS.unity
     guid: 0216a5fc38ff4fb4ba16caf7770a52bf
