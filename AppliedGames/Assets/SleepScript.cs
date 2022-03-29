@@ -2,40 +2,46 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Events;
 
-public class SleepScript : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
+public class SleepScript : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
     public Transform inventoryPos;
-    bool bijWezen = false;
+    private RectTransform rectTrans;
+    private Canvas canvas;
+    private CanvasGroup CanvasGroup;
 
+    public GameObject houder;
+    public koelkastVoorwerpen sleepVoorwerp;
+
+
+    private void Awake()
+    {
+        inventoryPos = transform.parent.transform;
+        rectTrans = GetComponent<RectTransform>();
+        CanvasGroup = GetComponent<CanvasGroup>();
+        canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
+        gameObject.SetActive(false);
+    }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        Debug.Log("OnBeginDrag");
-
+        CanvasGroup.blocksRaycasts = false;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        Debug.Log("OnDrag");
-        transform.position = Input.mousePosition;
+        rectTrans.anchoredPosition += eventData.delta / canvas.scaleFactor;
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        Debug.Log("OnEndDrag");
-        if (bijWezen)
-        {
-
-        }
-        else
-        {
-            transform.position = inventoryPos.position; 
-        }
+        TERUGGAANNUUUUUU();
     }
 
-    void IPointerDownHandler.OnPointerDown(PointerEventData eventData)
+    public void TERUGGAANNUUUUUU()
     {
-        Debug.Log("OnDown");
+        transform.position = inventoryPos.position;
+        CanvasGroup.blocksRaycasts = true;
     }
 }

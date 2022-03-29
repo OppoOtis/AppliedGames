@@ -3,63 +3,41 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum koelkastVoorwerpen { rood, blauw, groen, oranje, geel };
+
+
 public class keukenInventaris : MonoBehaviour
 {
-    public enum Item {Hexagon, Driehoek, Kegel, Ruit, Rechthoek, leeg}
-    public Item itemInInventaris;
-    public Item itemOpSnijPlank;
-    public Item voorwerp;
+    koelkastVoorwerpen voorwerpInInventory;
 
-    public List<GameObject> vormenInKoelkast = new List<GameObject>();
-    public List<GameObject> vormenInInventaris = new List<GameObject>();
-    public List<GameObject> vormenOpSnijPlank = new List<GameObject>();
-    public List<Color> vormenKleuren = new List<Color>();
+    public List<GameObject> InventarisVoorwerpenLijst = new List<GameObject>();
+    public List<GameObject> koelkastVoorwerpenLijst = new List<GameObject>();
+    public GameObject koelkast;
+    public bool inventoryVolOfNiet;
 
-    private void Start()
+    public void Start()
     {
+        foreach (Transform child in transform)
+        {
+            InventarisVoorwerpenLijst.Add(child.gameObject);
+        }
+
+        foreach (Transform child in koelkast.transform)
+        {
+            koelkastVoorwerpenLijst.Add(child.gameObject);
+        }
     }
 
     public void putInInventory(int boe)
     {
-        //Debug.Log(boe);
-        vormenInInventaris[(int)itemInInventaris].SetActive(false);
-        vormenInKoelkast[(int)itemInInventaris].SetActive(true);
-        Debug.Log(itemInInventaris);
-
-        itemInInventaris = (Item)boe;
-        voorwerp = itemInInventaris;
-
-        vormenInKoelkast[(int)itemInInventaris].SetActive(false);
-        vormenInInventaris[(int)itemInInventaris].SetActive(true);
+        inventoryVolOfNiet = true;
+        InventarisVoorwerpenLijst[(int)voorwerpInInventory].SetActive(false);
+        voorwerpInInventory = (koelkastVoorwerpen)boe;
+        InventarisVoorwerpenLijst[(int)voorwerpInInventory].SetActive(true);
     }
 
-    public void snijPlankEnter()
+    public void inventarisLeegMaker()
     {
-        vormenOpSnijPlank[(int)itemInInventaris].SetActive(true);
-        itemOpSnijPlank = (Item)itemInInventaris;
+        inventoryVolOfNiet = false;
     }
-
-    public void snijPlankExit()
-    {
-        vormenOpSnijPlank[(int)itemInInventaris].SetActive(false);
-    }
-
-    public void vormSnijKiezer(int boe)
-    {
-        vormenOpSnijPlank[(int)itemOpSnijPlank].SetActive(false);
-        itemOpSnijPlank = (Item)boe;
-        vormenOpSnijPlank[(int)itemOpSnijPlank].SetActive(true);
-    }
-
-    public void snijden()
-    {
-        vormenInInventaris[(int)itemInInventaris].SetActive(false);
-        itemInInventaris = itemOpSnijPlank;
-
-
-        vormenInInventaris[(int)itemInInventaris].gameObject.GetComponent<Image>().color = vormenKleuren[(int)voorwerp];
-        Debug.Log(voorwerp);
-        vormenInInventaris[(int)itemInInventaris].SetActive(true);
-    }
-
 }
