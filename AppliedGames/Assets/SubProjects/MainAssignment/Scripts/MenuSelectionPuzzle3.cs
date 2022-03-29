@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuSelectionPuzzle3 : MonoBehaviour
 {
@@ -31,7 +32,7 @@ public class MenuSelectionPuzzle3 : MonoBehaviour
             }
         }
         if(counter == 0){
-            Debug.Log("win!");
+            SceneManager.LoadScene(0);
         }
     }
 }

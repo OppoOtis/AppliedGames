@@ -982,8 +982,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfd2f7bad1d7bb7488dae85b21e07eb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  states: {fileID: 0}
+  hatStates: {fileID: 0}
   sadGreetSprite: {fileID: 696603164}
-  normalGreetSprite: {fileID: 607898749}
+  happyGreetSprite: {fileID: 0}
+  win: {fileID: 0}
+  wrong: {fileID: 0}
+  timeToGoBack: 1
+  goToNextPuzzle: 1
+  clothes: []
+  wardrobeC: []
 --- !u!114 &442539023
 MonoBehaviour:
   m_ObjectHideFlags: 0
