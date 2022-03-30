@@ -17,7 +17,7 @@ public class mixknopgedrag : MonoBehaviour
     {
         canvGroup.alpha = 1;
         GetComponent<Button>().enabled = true;
-        Debug.Log("Actief");
+        //Debug.Log("Actief");
     }
 
     public void slapen()

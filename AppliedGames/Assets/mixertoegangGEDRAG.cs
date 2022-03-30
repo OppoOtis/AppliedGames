@@ -26,7 +26,7 @@ public class mixertoegangGEDRAG : MonoBehaviour
         else if(!houder1.houderHeeftCirkel || !houder2.houderHeeftCirkel)
         {
             magMixen = false;
-            Debug.Log("slaap");
+            //Debug.Log("slaap");
             mixSlaap.Invoke();
         }
     }
@@ -37,8 +37,12 @@ public class mixertoegangGEDRAG : MonoBehaviour
         Color nieuw2 = keukenInventaris.Instance.InventarisVoorwerpenLijst[(int)houder1.itemInHouder].gameObject.GetComponent<Image>().color;
 
         ultraNieuw = (nieuw1 + nieuw2) / 2f;
-
-
+        nieuweCirkel.SetActive(true);
+        nieuweCirkel.GetComponent<Image>().color = ultraNieuw;
     }
 
+    public void kleurAancirkel()
+    {
+        keukenInventaris.Instance.InventarisVoorwerpenLijst[5].gameObject.GetComponent<Image>().color = ultraNieuw;
+    }
 }
