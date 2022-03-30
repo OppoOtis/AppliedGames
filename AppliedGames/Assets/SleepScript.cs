@@ -13,6 +13,7 @@ public class SleepScript : MonoBehaviour, IBeginDragHandler, IEndDragHandler, ID
 
     public GameObject houder;
     public koelkastVoorwerpen sleepVoorwerp;
+    public bool inHouder;
 
 
     private void Awake()
