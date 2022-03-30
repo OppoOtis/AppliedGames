@@ -19,6 +19,15 @@ public class HouderDePouder2 : MonoBehaviour, IDropHandler
         }
     }
 
+    public void zetAllesUit()
+    {
+        foreach (Transform child in transform)
+        {
+            child.gameObject.SetActive(false);
+        }
+    }
+
+
     public void OnDrop(PointerEventData eventData)
     {
         if (eventData.pointerDrag != null)
