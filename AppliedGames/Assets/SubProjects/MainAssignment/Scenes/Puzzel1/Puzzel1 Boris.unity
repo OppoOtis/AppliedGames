@@ -819,7 +819,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a093464cea269d4eaa172543485d228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keukScript: {fileID: 757404652}
   terugGaanNaarInv:
     m_PersistentCalls:
       m_Calls:
@@ -911,7 +910,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a093464cea269d4eaa172543485d228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keukScript: {fileID: 757404652}
   terugGaanNaarInv:
     m_PersistentCalls:
       m_Calls:
@@ -1435,7 +1433,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a093464cea269d4eaa172543485d228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keukScript: {fileID: 757404652}
   terugGaanNaarInv:
     m_PersistentCalls:
       m_Calls:
@@ -2442,7 +2439,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a093464cea269d4eaa172543485d228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keukScript: {fileID: 757404652}
   terugGaanNaarInv:
     m_PersistentCalls:
       m_Calls:
@@ -2815,6 +2811,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   houderVoorwerpenSeks: []
   houderHeeftCirkel: 0
+  checkOfMagMixenEven:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1339830857}
+        m_TargetAssemblyTypeName: mixertoegangGEDRAG, Assembly-CSharp
+        m_MethodName: mixerChecker
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &1102525492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3011,7 +3022,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a093464cea269d4eaa172543485d228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keukScript: {fileID: 757404652}
   terugGaanNaarInv:
     m_PersistentCalls:
       m_Calls:
@@ -3386,7 +3396,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a093464cea269d4eaa172543485d228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keukScript: {fileID: 757404652}
   terugGaanNaarInv:
     m_PersistentCalls:
       m_Calls:
@@ -3483,6 +3492,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   houderVoorwerpenSeks: []
   houderHeeftCirkel: 0
+  checkOfMagMixenEven:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1339830857}
+        m_TargetAssemblyTypeName: mixertoegangGEDRAG, Assembly-CSharp
+        m_MethodName: mixerChecker
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &1290311726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3688,7 +3712,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a093464cea269d4eaa172543485d228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keukScript: {fileID: 757404652}
   terugGaanNaarInv:
     m_PersistentCalls:
       m_Calls:
@@ -3982,7 +4005,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1339830856
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4017,9 +4040,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 1339830855}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83307edeaa7e5274db57a744f66c73fc, type: 3}
+  m_Script: {fileID: 11500000, guid: 324e13bc5d34b474f95fdd99591b9e26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  magMixen: 0
+  mixActief:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1841848645}
+        m_TargetAssemblyTypeName: mixknopgedrag, Assembly-CSharp
+        m_MethodName: actief
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+  mixSlaap:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1841848645}
+        m_TargetAssemblyTypeName: mixknopgedrag, Assembly-CSharp
+        m_MethodName: slapen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+  houder1: {fileID: 1102525490}
+  houder2: {fileID: 1290311724}
 --- !u!1 &1500324373
 GameObject:
   m_ObjectHideFlags: 0
@@ -4222,7 +4278,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a093464cea269d4eaa172543485d228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keukScript: {fileID: 757404652}
   terugGaanNaarInv:
     m_PersistentCalls:
       m_Calls:
@@ -4934,7 +4989,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a093464cea269d4eaa172543485d228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keukScript: {fileID: 757404652}
   terugGaanNaarInv:
     m_PersistentCalls:
       m_Calls:
@@ -5277,7 +5331,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a093464cea269d4eaa172543485d228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keukScript: {fileID: 757404652}
   terugGaanNaarInv:
     m_PersistentCalls:
       m_Calls:

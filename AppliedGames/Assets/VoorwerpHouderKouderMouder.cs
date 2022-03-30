@@ -5,7 +5,6 @@ using UnityEngine.Events;
 
 public class VoorwerpHouderKouderMouder : MonoBehaviour
 {
-	public keukenInventaris keukScript;
     public UnityEvent terugGaanNaarInv;
 
 	public void terugNaarInventory()
@@ -13,8 +12,11 @@ public class VoorwerpHouderKouderMouder : MonoBehaviour
         //Debug.Log("dit komt alleen als de inventory leeg is");
         if (!keukenInventaris.Instance.inventoryVolOfNiet)
         {
-            Debug.Log("dit komt alleen als de inventory leeg is");
+            //Debug.Log("dit komt alleen als de inventory leeg is");
+
             terugGaanNaarInv.Invoke();
+            transform.parent.GetComponent<HouderDePouder2>().checkOfMagMixenEven.Invoke();
+            transform.parent.GetComponent<HouderDePouder2>().houderHeeftCirkel = false;
         }
 	}
 }
