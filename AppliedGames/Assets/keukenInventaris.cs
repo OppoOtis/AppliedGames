@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public enum koelkastVoorwerpen { rood, blauw, groen, oranje, geel };
 
 
-public class keukenInventaris : MonoBehaviour
+public class keukenInventaris : Singleton<keukenInventaris>
 {
     koelkastVoorwerpen voorwerpInInventory;
 
@@ -14,6 +14,12 @@ public class keukenInventaris : MonoBehaviour
     public List<GameObject> koelkastVoorwerpenLijst = new List<GameObject>();
     public GameObject koelkast;
     public bool inventoryVolOfNiet;
+
+    public void Awake()
+    {
+        Instance = this;
+    }
+
 
     public void Start()
     {

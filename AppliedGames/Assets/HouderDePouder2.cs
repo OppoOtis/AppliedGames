@@ -19,8 +19,10 @@ public class HouderDePouder2 : MonoBehaviour, IDropHandler
     {
         if (eventData.pointerDrag != null)
         {
+            keukenInventaris.Instance.inventoryVolOfNiet = false;
             eventData.pointerDrag.GetComponent<SleepScript>().inHouder = true;
             houderVoorwerpenSeks[(int)eventData.pointerDrag.GetComponent<SleepScript>().sleepVoorwerp].SetActive(true);
+            eventData.pointerDrag.SetActive(false);
         }
     }
 }

@@ -10,10 +10,11 @@ public class VoorwerpHouderKouderMouder : MonoBehaviour
 
 	public void terugNaarInventory()
     {
-        if (keukScript.inventoryVolOfNiet)
+        //Debug.Log("dit komt alleen als de inventory leeg is");
+        if (!keukenInventaris.Instance.inventoryVolOfNiet)
         {
-            terugGaanNaarInv.Invoke();
             Debug.Log("dit komt alleen als de inventory leeg is");
+            terugGaanNaarInv.Invoke();
         }
 	}
 }

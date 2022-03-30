@@ -279,7 +279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -411,7 +411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -714,7 +714,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -819,10 +819,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a093464cea269d4eaa172543485d228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keukScript: {fileID: 0}
+  keukScript: {fileID: 757404652}
   terugGaanNaarInv:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 757404652}
+        m_TargetAssemblyTypeName: keukenInventaris, Assembly-CSharp
+        m_MethodName: putInInventory
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &463608853
 GameObject:
   m_ObjectHideFlags: 0
@@ -875,10 +887,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a093464cea269d4eaa172543485d228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keukScript: {fileID: 0}
+  keukScript: {fileID: 757404652}
   terugGaanNaarInv:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 757404652}
+        m_TargetAssemblyTypeName: keukenInventaris, Assembly-CSharp
+        m_MethodName: putInInventory
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &463608856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -892,7 +916,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -1258,7 +1282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -1363,10 +1387,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a093464cea269d4eaa172543485d228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keukScript: {fileID: 0}
+  keukScript: {fileID: 757404652}
   terugGaanNaarInv:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 757404652}
+        m_TargetAssemblyTypeName: keukenInventaris, Assembly-CSharp
+        m_MethodName: putInInventory
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &723071215
 GameObject:
   m_ObjectHideFlags: 0
@@ -1835,7 +1871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -2334,10 +2370,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a093464cea269d4eaa172543485d228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keukScript: {fileID: 0}
+  keukScript: {fileID: 757404652}
   terugGaanNaarInv:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 757404652}
+        m_TargetAssemblyTypeName: keukenInventaris, Assembly-CSharp
+        m_MethodName: putInInventory
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1051706304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2351,7 +2399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -2495,7 +2543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -2669,6 +2717,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a5b6bb577ee7942848351d6df103c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  houderVoorwerpenSeks: []
 --- !u!114 &1102525492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2760,7 +2809,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -2865,10 +2914,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a093464cea269d4eaa172543485d228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keukScript: {fileID: 0}
+  keukScript: {fileID: 757404652}
   terugGaanNaarInv:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 757404652}
+        m_TargetAssemblyTypeName: keukenInventaris, Assembly-CSharp
+        m_MethodName: putInInventory
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1206857778
 GameObject:
   m_ObjectHideFlags: 0
@@ -3099,7 +3160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -3204,10 +3265,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a093464cea269d4eaa172543485d228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keukScript: {fileID: 0}
+  keukScript: {fileID: 757404652}
   terugGaanNaarInv:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 757404652}
+        m_TargetAssemblyTypeName: keukenInventaris, Assembly-CSharp
+        m_MethodName: putInInventory
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1290311722
 GameObject:
   m_ObjectHideFlags: 0
@@ -3264,6 +3337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a5b6bb577ee7942848351d6df103c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  houderVoorwerpenSeks: []
 --- !u!114 &1290311725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3490,10 +3564,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a093464cea269d4eaa172543485d228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keukScript: {fileID: 0}
+  keukScript: {fileID: 757404652}
   terugGaanNaarInv:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 757404652}
+        m_TargetAssemblyTypeName: keukenInventaris, Assembly-CSharp
+        m_MethodName: putInInventory
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1294227866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3507,7 +3593,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -3651,7 +3737,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -3988,10 +4074,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a093464cea269d4eaa172543485d228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keukScript: {fileID: 0}
+  keukScript: {fileID: 757404652}
   terugGaanNaarInv:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 757404652}
+        m_TargetAssemblyTypeName: keukenInventaris, Assembly-CSharp
+        m_MethodName: putInInventory
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1639887175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4005,7 +4103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -4314,7 +4412,6 @@ GameObject:
   - component: {fileID: 1718851210}
   - component: {fileID: 1718851212}
   - component: {fileID: 1718851211}
-  - component: {fileID: 1718851213}
   m_Layer: 5
   m_Name: Boris
   m_TagString: Untagged
@@ -4377,18 +4474,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1718851209}
   m_CullTransparentMesh: 1
---- !u!114 &1718851213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1718851209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08283540be852a24a8ec32d2fd721944, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1781149321
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4572,7 +4657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -4677,10 +4762,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a093464cea269d4eaa172543485d228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keukScript: {fileID: 0}
+  keukScript: {fileID: 757404652}
   terugGaanNaarInv:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 757404652}
+        m_TargetAssemblyTypeName: keukenInventaris, Assembly-CSharp
+        m_MethodName: putInInventory
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1841848639
 GameObject:
   m_ObjectHideFlags: 0
@@ -4984,10 +5081,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a093464cea269d4eaa172543485d228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keukScript: {fileID: 0}
+  keukScript: {fileID: 757404652}
   terugGaanNaarInv:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 757404652}
+        m_TargetAssemblyTypeName: keukenInventaris, Assembly-CSharp
+        m_MethodName: putInInventory
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2061298894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5001,7 +5110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
