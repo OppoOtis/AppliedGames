@@ -11,6 +11,8 @@ public class mixertoegangGEDRAG : MonoBehaviour
     public UnityEvent mixSlaap;
     public HouderDePouder2 houder1;
     public HouderDePouder2 houder2;
+    public GameObject nieuweCirkel;
+    public Color ultraNieuw;
 
     public void mixerChecker()
     {
@@ -28,4 +30,15 @@ public class mixertoegangGEDRAG : MonoBehaviour
             mixSlaap.Invoke();
         }
     }
+
+    public void mixen()
+    {
+        Color nieuw1 = keukenInventaris.Instance.InventarisVoorwerpenLijst[(int)houder2.itemInHouder].gameObject.GetComponent<Image>().color;
+        Color nieuw2 = keukenInventaris.Instance.InventarisVoorwerpenLijst[(int)houder1.itemInHouder].gameObject.GetComponent<Image>().color;
+
+        ultraNieuw = (nieuw1 + nieuw2) / 2f;
+
+
+    }
+
 }
