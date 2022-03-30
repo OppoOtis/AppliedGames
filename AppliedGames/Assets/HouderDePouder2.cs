@@ -9,6 +9,7 @@ public class HouderDePouder2 : MonoBehaviour, IDropHandler
     public List<GameObject> houderVoorwerpenSeks = new List<GameObject>();
     public bool houderHeeftCirkel;
     public UnityEvent checkOfMagMixenEven;
+    public koelkastVoorwerpen itemInHouder;
 
     public void Start()
     {
@@ -32,9 +33,12 @@ public class HouderDePouder2 : MonoBehaviour, IDropHandler
                 }
             }
             keukenInventaris.Instance.inventoryVolOfNiet = false;
+
             eventData.pointerDrag.GetComponent<SleepScript>().inHouder = true;
+            itemInHouder = eventData.pointerDrag.GetComponent<SleepScript>().sleepVoorwerp;
             houderVoorwerpenSeks[(int)eventData.pointerDrag.GetComponent<SleepScript>().sleepVoorwerp].SetActive(true);
             eventData.pointerDrag.SetActive(false);
+
             houderHeeftCirkel = true;
             checkOfMagMixenEven.Invoke();
         }

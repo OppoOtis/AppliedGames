@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum koelkastVoorwerpen { rood, blauw, groen, oranje, geel };
+public enum koelkastVoorwerpen { rood, blauw, groen, oranje, geel, leeg };
 
 
 public class keukenInventaris : Singleton<keukenInventaris>
