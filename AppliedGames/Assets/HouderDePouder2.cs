@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 public class HouderDePouder2 : MonoBehaviour, IDropHandler
 {
     public List<GameObject> houderVoorwerpenSeks = new List<GameObject>();
+    public bool houderHeeftCirkel;
 
     public void Start()
     {
@@ -19,10 +20,21 @@ public class HouderDePouder2 : MonoBehaviour, IDropHandler
     {
         if (eventData.pointerDrag != null)
         {
+            foreach (Transform child in transform)
+            {
+                //Debug.Log(child.name);
+                if (child.gameObject != eventData.pointerDrag.gameObject)
+                {
+                    //Debug.Log(child.name);
+                    child.gameObject.SetActive(false);
+                }
+            }
             keukenInventaris.Instance.inventoryVolOfNiet = false;
             eventData.pointerDrag.GetComponent<SleepScript>().inHouder = true;
             houderVoorwerpenSeks[(int)eventData.pointerDrag.GetComponent<SleepScript>().sleepVoorwerp].SetActive(true);
             eventData.pointerDrag.SetActive(false);
+            houderHeeftCirkel = true;
+   
         }
     }
 }

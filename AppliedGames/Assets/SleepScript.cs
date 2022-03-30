@@ -45,4 +45,10 @@ public class SleepScript : MonoBehaviour, IBeginDragHandler, IEndDragHandler, ID
         transform.position = inventoryPos.position;
         CanvasGroup.blocksRaycasts = true;
     }
+
+    void OnDisable()
+    {
+        //Debug.Log("PrintOnDisable: script was disabled");
+        TERUGGAANNUUUUUU();
+    }
 }
