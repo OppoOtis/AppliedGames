@@ -675,7 +675,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &197709315
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1647,6 +1647,7 @@ MonoBehaviour:
   inventoryPos: {fileID: 0}
   houder: {fileID: 0}
   sleepVoorwerp: 1
+  inHouder: 0
 --- !u!114 &589063000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2094,7 +2095,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2744439798190928296, guid: d33ab46c2f1035940b2cdc37aa2e0215, type: 3}
+  m_Sprite: {fileID: 1634534604920121474, guid: 2bd082d85be09a84088dfcb167407fdd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2336,6 +2337,7 @@ MonoBehaviour:
   inventoryPos: {fileID: 0}
   houder: {fileID: 0}
   sleepVoorwerp: 4
+  inHouder: 0
 --- !u!114 &762350079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2816,6 +2818,7 @@ MonoBehaviour:
   inventoryPos: {fileID: 0}
   houder: {fileID: 0}
   sleepVoorwerp: 2
+  inHouder: 0
 --- !u!114 &843507323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3392,6 +3395,7 @@ MonoBehaviour:
   inventoryPos: {fileID: 0}
   houder: {fileID: 0}
   sleepVoorwerp: 0
+  inHouder: 0
 --- !u!114 &964617503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4891,6 +4895,7 @@ MonoBehaviour:
   inventoryPos: {fileID: 0}
   houder: {fileID: 0}
   sleepVoorwerp: 3
+  inHouder: 0
 --- !u!114 &1705259977
 MonoBehaviour:
   m_ObjectHideFlags: 0
