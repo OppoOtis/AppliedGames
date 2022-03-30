@@ -13,6 +13,7 @@ public class mixertoegangGEDRAG : MonoBehaviour
     public HouderDePouder2 houder2;
     public GameObject nieuweCirkel;
     public Color ultraNieuw;
+    public Color deGoeieKleur;
 
     public void mixerChecker()
     {
@@ -39,6 +40,17 @@ public class mixertoegangGEDRAG : MonoBehaviour
         ultraNieuw = (nieuw1 + nieuw2) / 2f;
         nieuweCirkel.SetActive(true);
         nieuweCirkel.GetComponent<Image>().color = ultraNieuw;
+        if ((houder1.itemInHouder == koelkastVoorwerpen.blauw && houder2.itemInHouder == koelkastVoorwerpen.rood) || 
+            houder2.itemInHouder == koelkastVoorwerpen.blauw && houder1.itemInHouder == koelkastVoorwerpen.rood)             
+        {
+            keukenInventaris.Instance.InventarisVoorwerpenLijst[5].GetComponent<SleepScript>().sleepVoorwerp = koelkastVoorwerpen.paars;
+            Debug.Log("GOED");
+        }
+        else
+        {
+            keukenInventaris.Instance.InventarisVoorwerpenLijst[5].GetComponent<SleepScript>().sleepVoorwerp = koelkastVoorwerpen.verkeerd;
+            Debug.Log("SLECHT");
+        }
     }
 
     public void kleurAancirkel()
