@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class mixertoegangGEDRAG : MonoBehaviour
 {
     public bool magMixen;
+    public bool greet;
     public UnityEvent mixActief;
     public UnityEvent mixSlaap;
     public HouderDePouder2 houder1;
@@ -14,6 +15,7 @@ public class mixertoegangGEDRAG : MonoBehaviour
     public GameObject nieuweCirkel;
     public Color ultraNieuw;
     public Color deGoeieKleur;
+    public keukenInventarisGreet keukenGreet;
 
     public void mixerChecker()
     {
@@ -34,23 +36,35 @@ public class mixertoegangGEDRAG : MonoBehaviour
 
     public void mixen()
     {
-        Color nieuw1 = keukenInventaris.Instance.InventarisVoorwerpenLijst[(int)houder2.itemInHouder].gameObject.GetComponent<Image>().color;
-        Color nieuw2 = keukenInventaris.Instance.InventarisVoorwerpenLijst[(int)houder1.itemInHouder].gameObject.GetComponent<Image>().color;
+        if(greet){
+            nieuweCirkel.SetActive(true);
+            if ((houder1.itemInHouder == koelkastVoorwerpen.blauw && houder2.itemInHouder == koelkastVoorwerpen.rood)){
+                keukenInventaris.Instance.InventarisVoorwerpenLijst[5].GetComponent<SleepScript>().sleepVoorwerp = koelkastVoorwerpen.paars;
+                Debug.Log("GOED");
+            }else{
+                keukenInventaris.Instance.InventarisVoorwerpenLijst[5].GetComponent<SleepScript>().sleepVoorwerp = koelkastVoorwerpen.verkeerd;
+                Debug.Log("SLECHT");
+            }
+        }else{
+            Color nieuw1 = keukenInventaris.Instance.InventarisVoorwerpenLijst[(int)houder2.itemInHouder].gameObject.GetComponent<Image>().color;
+            Color nieuw2 = keukenInventaris.Instance.InventarisVoorwerpenLijst[(int)houder1.itemInHouder].gameObject.GetComponent<Image>().color;
 
-        ultraNieuw = (nieuw1 + nieuw2) / 2f;
-        nieuweCirkel.SetActive(true);
-        nieuweCirkel.GetComponent<Image>().color = ultraNieuw;
-        if ((houder1.itemInHouder == koelkastVoorwerpen.blauw && houder2.itemInHouder == koelkastVoorwerpen.rood) || 
-            houder2.itemInHouder == koelkastVoorwerpen.blauw && houder1.itemInHouder == koelkastVoorwerpen.rood)             
-        {
-            keukenInventaris.Instance.InventarisVoorwerpenLijst[5].GetComponent<SleepScript>().sleepVoorwerp = koelkastVoorwerpen.paars;
-            Debug.Log("GOED");
+            ultraNieuw = (nieuw1 + nieuw2) / 2f;
+            nieuweCirkel.SetActive(true);
+            nieuweCirkel.GetComponent<Image>().color = ultraNieuw;
+            if ((houder1.itemInHouder == koelkastVoorwerpen.blauw && houder2.itemInHouder == koelkastVoorwerpen.rood) || 
+                houder2.itemInHouder == koelkastVoorwerpen.blauw && houder1.itemInHouder == koelkastVoorwerpen.rood)             
+            {
+                keukenInventaris.Instance.InventarisVoorwerpenLijst[5].GetComponent<SleepScript>().sleepVoorwerp = koelkastVoorwerpen.paars;
+                Debug.Log("GOED");
+            }
+            else
+            {
+                keukenInventaris.Instance.InventarisVoorwerpenLijst[5].GetComponent<SleepScript>().sleepVoorwerp = koelkastVoorwerpen.verkeerd;
+                Debug.Log("SLECHT");
+            }
         }
-        else
-        {
-            keukenInventaris.Instance.InventarisVoorwerpenLijst[5].GetComponent<SleepScript>().sleepVoorwerp = koelkastVoorwerpen.verkeerd;
-            Debug.Log("SLECHT");
-        }
+        
     }
 
     public void kleurAancirkel()

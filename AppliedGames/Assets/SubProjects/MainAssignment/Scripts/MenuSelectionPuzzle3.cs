@@ -32,7 +32,7 @@ public class MenuSelectionPuzzle3 : MonoBehaviour
             }
         }
         if(counter == 0){
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(2);
         }
     }
 }
